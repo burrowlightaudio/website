@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impressum & Datenschutz – Burrowlight Audio</title>
-<meta name="robots" content="noindex">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>Impressum – Burrowlight Audio</title>
 <style>
-  body{background:#06080f;color:#dbe0eb;font-family:"Inter","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
-    font-weight:300;line-height:1.65;margin:0;padding:50px 24px}
-  main{max-width:720px;margin:0 auto}
-  h1{font-weight:200;letter-spacing:.2em;text-transform:uppercase;font-size:26px;margin-bottom:30px}
-  h2{font-weight:400;font-size:17px;margin:34px 0 8px;color:#8fccff}
-  p,li{font-size:15px;margin-bottom:8px}
-  a{color:#8fccff}
-  .back{display:inline-block;margin-bottom:30px;font-size:14px}
-</style>
-</head>
-<body>
-<main>
-<a class="back" href="index.html">← burrowlightaud.io</a>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:#e8e6e1;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 22px 24px}
+h1{font-weight:300;letter-spacing:.04em;font-size:28px;margin:0 0 28px}
+h2{font-weight:400;font-size:18px;margin:34px 0 8px;color:#fff}
+p{margin:0 0 14px}
+a{color:#e8a33d;text-decoration:none;border-bottom:1px solid rgba(232,163,61,.4)}
+a:hover{border-bottom-color:#e8a33d}
+.back{display:inline-block;margin-bottom:30px;font-size:14px}
+footer{max-width:680px;margin:0 auto;padding:24px 22px 48px;font-size:14px;color:#8d8a84;border-top:1px solid #222}
+footer a{color:#8d8a84;border-bottom-color:#444}
+</style></head><body><main>
+<a class="back" href="index.html">&larr; Burrowlight Audio</a>
 <h1>Impressum</h1>
 
 <h2>Angaben gemäß § 5 DDG</h2>
-<p>__NAME__<br>__ANSCHRIFT__</p>
-
+<p>Burrowlight Audio<br>Felix Jacomo Grund<br>c/o Online-Impressum 13196<br>Europaring 90<br>53757 Sankt Augustin<br>Deutschland</p>
 <h2>Kontakt</h2>
 <p>E-Mail: <a href="mailto:hi@burrowlightaud.io">hi@burrowlightaud.io</a></p>
+<h2>Verbraucherstreitbeilegung</h2>
+<p>Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Haftung für Links</h2>
+<p>Diese Seite enthält Links zu externen Seiten (zum Beispiel Gumroad, Instagram, YouTube). Auf deren Inhalte habe ich keinen Einfluss und übernehme dafür keine Gewähr. Verantwortlich ist jeweils der Betreiber der verlinkten Seite.</p>
 
-<h2>Verantwortlich für den Inhalt</h2>
-<p>__NAME__, Anschrift wie oben.</p>
-
-<h1 id="datenschutz" style="margin-top:60px">Datenschutz</h1>
-
-<h2>Verantwortlicher</h2>
-<p>__NAME__, Anschrift und E-Mail wie im Impressum.</p>
-
-<h2>Hosting und Server-Logfiles</h2>
-<p>Diese Webseite wird bei __HOSTER__ gehostet. Beim Aufruf der Seite verarbeitet der Hoster technisch notwendige Daten (z.&nbsp;B. IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser), um die Seite auszuliefern und die Sicherheit des Betriebs zu gewährleisten. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einem sicheren und funktionsfähigen Webangebot).</p>
-
-<h2>Keine Cookies, kein Tracking</h2>
-<p>Diese Seite setzt keine Cookies, verwendet keine Analyse- oder Tracking-Werkzeuge und lädt keine Schriften oder Skripte von fremden Servern. Bilder und Schriften sind in die Seite eingebettet bzw. stammen von deinem Gerät.</p>
-
-<h2>Externe Links</h2>
-<p>Die Seite verlinkt auf Instagram und Gumroad. Erst wenn du einen dieser Links anklickst, verlässt du diese Seite; dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
-
-<h2>Kontakt per E-Mail</h2>
-<p>Wenn du eine E-Mail schreibst, werden deine Angaben nur zur Bearbeitung deiner Anfrage verwendet und nicht weitergegeben.</p>
-
-<h2>Deine Rechte</h2>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art.&nbsp;15–21 DSGVO) sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
-
-<p style="margin-top:40px;color:#9aa3b5;font-size:13px">Stand: November 2026</p>
-</main>
-</body>
-</html>
+</main><footer><a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Datenschutz</a> &middot; Burrowlight Audio</footer></body></html>
